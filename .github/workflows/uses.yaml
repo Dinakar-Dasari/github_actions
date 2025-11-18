@@ -4,9 +4,10 @@ name: "uses"
 on: [push]
 jobs:
   job1:
-  steps:
-    - uses: actions/checkout@v5
-    - name: step-2
-      run: echo "the above step will checkout the repo"
-    - name: step-3
-      run: ls -la 
+    runs-on: "ubuntu-latest"
+    steps:
+      - uses: actions/checkout@v5
+      - name: step-2
+        run: echo "the above step will checkout the repo"
+      - name: step-3
+        run: ls -la 
