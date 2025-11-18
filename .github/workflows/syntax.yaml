@@ -1,11 +1,10 @@
 name: "sample"
 on: [push]
 jobs:
-  job-1:
+  job-1:  ## pipeline/job name
     runs-on: "ubuntu-latest"
     steps:
       - name: "stage-1"
         run: echo "this is stage-1"
-
       - name: "step-1"
         run: echo "this is stage-2"    
