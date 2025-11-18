@@ -1,0 +1,13 @@
+name: "multiple-jobs"
+on: [push]
+jobs:
+  job1:
+    runs-on: ubuntu-latest
+    steps:
+      - name: step1
+        run: "This is step1 of job1"
+
+  job2:
+    runs-on: "ubuntu-latest"
+    steps:
+      - name: "This is step1 of job2"

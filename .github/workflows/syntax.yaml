@@ -1,5 +1,5 @@
 name: "sample"
-on: [push]
+on: [push]  ## on which actions the pipeline should run
 jobs:
   job-1:  ## pipeline/job name
     runs-on: "ubuntu-latest"
