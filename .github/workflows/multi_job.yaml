@@ -5,10 +5,10 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: step1
-        run: "This is step1 of job1"
+        run: echo "This is step1 of job1"
 
   job2:
     runs-on: "ubuntu-latest"
     steps:
       - name: step-1
-        run: "This is step1 of job2"
+        run: echo "This is step1 of job2"
