@@ -17,4 +17,12 @@
   - Actions referenced with uses can come from the same repository, any public repository(actions/checkout@v4), or Docker images.
   - This helps you leverage community-maintained or custom actions for tasks such as setting up environments, checking out code, uploading artifacts, or deploying applications without writing repetitive scripts
 
- 
+- **Authentication to aws:**
+  - Store AWS_ACCESS_KEY_ID and AWS_SECRET_ACCESS_KEY in your GitHub repository secrets.
+  - To use them in the pipeline we need to declare as
+    - ```
+      with:
+        aws-region: us-east-2
+        aws-access-key-id: ${{ steps.creds.outputs.aws-access-key-id }}
+        aws-secret-access-key: ${{ steps.creds.outputs.aws-secret-access-key }}
+      ```
