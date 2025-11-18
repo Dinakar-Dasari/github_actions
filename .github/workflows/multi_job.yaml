@@ -10,4 +10,5 @@ jobs:
   job2:
     runs-on: "ubuntu-latest"
     steps:
-      - name: "This is step1 of job2"
+      - name: step-1
+        run: "This is step1 of job2"
